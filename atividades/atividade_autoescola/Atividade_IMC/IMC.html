@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador IMC</title>
+    <script src="IMC.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  </head>
+  <body>
+    <form id="formulario" autocomplete="off">
+      <div>
+        <h1>verifique seu IMC</h1>
+        <h3>preencha os requisitos abaixo</h3>
+        <label for="id_nome"
+          >seu nome:
+          <input
+            type="text"
+            id="id_nome"
+            placeholder="digite seu nome"
+            autofocus
+            required
+          />
+        </label>
+        <label for="id_altura"
+          >sua altura:
+          <input
+            type="number"
+            id="id_altura"
+            maxlength="4"
+            minlength="2"
+            placeholder="digite sua altura"
+          />
+        </label>
+        <br />
+        <label for="id_peso"
+          >seu peso:
+          <input
+            type="number"
+            id="id_peso"
+            maxlength="8"
+            minlength="2"
+            placeholder="digite seu peso"
+            required
+          />
+        </label>
+        <br />
+        <input type="button" value="calcular" onclick="calcular()" />
+        <input type="reset" />
+        <p id="id_resultado"></p>
+      </div>
+      s
+    </form>
+  </body>
+</html>
